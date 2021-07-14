@@ -6,6 +6,7 @@ function Child() {
   return (
     <div>
       Child number {value}
+      <button onClick={()=>{value[1](++value[0])}}>Update Value</button>
     </div>
   );
 }
